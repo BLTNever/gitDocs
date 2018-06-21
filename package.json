@@ -1,0 +1,22 @@
+{
+  "name": "gitDocs",
+  "version": "1.0.0",
+  "description": "文档",
+  "main": "index.js",
+  "scripts": {
+    "doc": "node bin/index --start",
+    "doc:deploy": "node bin/index --deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LouiseDylan/gitDocs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "child-process-promise": "^2.2.1",
+    "docsify-cli": "^4.2.1",
+    "inquirer": "^5.2.0"
+  }
+}

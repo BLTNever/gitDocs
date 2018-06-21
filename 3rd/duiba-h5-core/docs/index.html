@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Docs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="http://fed.dui88.com/docs/theme/vue.css">
+</head>
+
+<body>
+  <style>
+    .ring-1 {
+      width: 10px;
+      height: 10px;
+      margin: 0 auto;
+      padding: 10px;
+      border: 7px dashed #4b9cdb;
+      border-radius: 100%;
+    }
+
+    .load-4 .ring-1 {
+      animation: loadingD 1.5s .3s cubic-bezier(.17, .37, .43, .67) infinite;
+    }
+
+    @keyframes loadingD {
+      0 {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <div id="app" class="load-4">
+    <div class="ring-1"></div>
+  </div>
+  <script>
+    window.$docsify = {
+      name: 'Doc',
+      repo: 'https://github.com/LouiseDylan/gitDocs',
+      disqus: 'shortname',
+      loadSidebar: true,
+      coverpage: true,
+      subMaxLevel: 2,
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: "auto",
+        placeholder: '输入关键字检索',
+        noData: "无结果"
+      },
+      depth: 6 // 搜索标题的最大程级, 1 - 6
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+</body>
+
+</html>
